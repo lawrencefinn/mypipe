@@ -62,11 +62,6 @@ class StdoutJsonProducer(config: Config) extends Producer(config) {
 
   override def queue(mutation: Mutation): Boolean = {
     // TODO: quote column values if they are strings before printing
-    val it = config.entrySet().iterator()
-    while (it.hasNext) {
-      val entry = it.next()
-      log.info("Config key " + entry.getKey)
-    }
     mutation match {
 
       case i: InsertMutation ⇒
