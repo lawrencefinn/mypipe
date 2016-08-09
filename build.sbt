@@ -45,7 +45,10 @@ lazy val snapshotterDependencies = Seq(
 
 lazy val producersDependencies = Seq(
   akkaActor,
-  typesafeConfig
+  typesafeConfig,
+  jackson,
+  jacksonData,
+  rabbitmq
 )
 
 lazy val avroDependencies = Seq(

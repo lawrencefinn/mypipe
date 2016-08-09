@@ -52,7 +52,7 @@ object PipeRunner extends App {
   log.info(s"Connecting ${pipes.size} pipes...")
   pipes.foreach(_.connect())
 
-  shutdown()
+  //shutdown()
 }
 
 object PipeRunnerUtil {

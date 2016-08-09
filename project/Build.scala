@@ -27,6 +27,9 @@ object Dependencies {
   val scopt = "com.github.scopt" %% "scopt" % "3.3.0"
   val typesafeConfig = "com.typesafe" % "config" % "1.2.1"
   val xinject = "javax.inject" % "javax.inject" % "1"
+  val jackson = "com.fasterxml.jackson.core" % "jackson-core" % "2.8.1"
+  val jacksonData = "com.fasterxml.jackson.core" % "jackson-databind" % "2.8.1"
+  val rabbitmq = "com.rabbitmq"    %  "amqp-client"           % "3.2.3"
 }
 
 object AvroCompiler {
